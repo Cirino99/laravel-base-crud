@@ -5,7 +5,7 @@
 @section('mainContent')
 <main> 
     <h1>Sono il create</h1>
-    <form action="{{ route('store') }}" method="post">
+    <form action="{{ route('comics.store') }}" method="post">
         @csrf
         <div>
             <label for="title">title</label>
