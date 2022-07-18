@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Comic;
+
 class ComicsController extends Controller
 {
     /**
@@ -13,7 +15,8 @@ class ComicsController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $comics = Comic::all();
+        return view('home', compact('comics'));
     }
 
     /**
