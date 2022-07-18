@@ -60,7 +60,7 @@ class ComicsController extends Controller
     public function show(Comic $comic)
     {
         dump($comic);
-        return view('show', compact('comic'));
+        return view('comics.show', compact('comic'));
     }
 
     /**
